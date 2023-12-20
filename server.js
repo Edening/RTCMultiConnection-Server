@@ -101,6 +101,7 @@ httpApp = httpApp.listen(process.env.PORT || PORT, process.env.IP || "0.0.0.0", 
 // --------------------------
 // socket.io codes goes below
 
+console.log("process.env.CORS: " + process.env.CORS)
 ioServer(httpApp, {
     cors: {
       origin: process.env.CORS || "http://localhost:3000"
